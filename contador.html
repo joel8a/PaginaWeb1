@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contador</title>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		console.log("hola");
+		$(document).ready(function(){
+			
+			var contador = 0;
+
+			setInterval(function(){
+
+				contador++;
+
+				$(".segundos").html(contador);
+			}, 1000);
+
+
+		});
+	</script>
+</head>
+<body>
+	<h1>Este es un contador</h1>
+	<p>Usted lleva <span class="segundos">0</span> segundos aquí...</p>
+</body>
+</html>
